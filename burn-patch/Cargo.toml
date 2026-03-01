@@ -1,0 +1,19 @@
+[package]
+name    = "burn"
+version = "0.20.1"
+edition = "2021"
+publish = false
+
+# The real burn from crates.io, renamed to avoid name conflict.
+[dependencies]
+burn_real = { package = "burn", version = "0.20.1" }
+
+[features]
+default  = []
+std      = []
+train    = ["burn_real/train"]
+wgpu     = ["burn_real/wgpu"]
+autodiff = ["burn_real/autodiff"]
+ndarray  = ["burn_real/ndarray"]
+# "test" is the missing feature. Maps to ndarray (CPU backend for tests).
+test     = ["ndarray"]
