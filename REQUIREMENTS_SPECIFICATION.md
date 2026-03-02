@@ -135,7 +135,7 @@ let token_embedding =
 - Vocabulary size: 8,192 tokens
 - Embedding dimension: 256 (d_model)
 
-#### 2.3 Positional Embeddings ✅
+#### 2.3 Positional Embeddings 
 **Implemented via:**
 - Burn's `TransformerEncoder` with built-in positional encoding
 - Supports relative position biases
@@ -235,7 +235,7 @@ Breakdown:
 
 ---
 
-## Requirement 3: Training Pipeline (25 marks) ✅
+## Requirement 3: Training Pipeline 
 
 ### Implementation Summary
 
@@ -411,7 +411,7 @@ if validation_loss < best_loss {
 
 ---
 
-## Requirement 4: Inference System (15 marks) ✅
+## Requirement 4: Inference System 
 
 ### Implementation Summary
 
@@ -680,4 +680,5 @@ pub fn new(config: &QaTransformerConfig, device: &B::Device) -> Self
 **Generated:** March 1, 2026  
 **Version:** word-doc-qa v0.1.0  
 **Build:** Release (optimized)
+
 
